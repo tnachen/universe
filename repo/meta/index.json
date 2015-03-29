@@ -24,6 +24,20 @@
       }
     },
     {
+      "currentVersion":"1.3.0-SNAPSHOT",
+      "description":"Apache Kafka is publish-subscribe messaging rethought as a distributed commit log.",
+      "framework":false,
+      "name":"kafka",
+      "tags":[
+        "mesosphere",
+        "framework",
+        "bigdata"
+      ],
+      "versions":{
+        "1.3.0-SNAPSHOT":"0"
+      }
+    },
+    {
       "currentVersion":"0.8.1",
       "description":"A cluster-wide init and control system for services in cgroups or Docker containers.",
       "framework":true,
