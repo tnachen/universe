@@ -1,0 +1,14 @@
+{
+  "id": "kafka",
+  "cpus": 1,
+  "mem": 1024,
+  "instances": 1,
+  "cmd": "scheduler",
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "mesosphere/kafka:2.9.2",
+      "network": "HOST"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "kafka/port": {
+      "type": "integer",
+      "description": "Port of the REST endpoint for calling the Kafka scheduler.",
+      "default": 9000,
+      "minimum": 0,
+      "maximum": 65535
+    },
+    "kafka/zookeeper": {
+      "type": "string",
+      "description": "URL to the Zookeeper that Kafka cluster will manage state and leadership."
+    }
+  }
+}
