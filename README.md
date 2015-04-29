@@ -1,6 +1,8 @@
 # Universe [![Build Status](https://teamcity.mesosphere.io/guestAuth/app/rest/builds/buildType:(id:Oss_Universe_Ci)/statusIcon)](https://teamcity.mesosphere.io/viewType.html?buildTypeId=Oss_Universe_Ci&guest=1)
 
-The Mesos package repository.
+The Mesos package registry.
+
+_Current registry specification version: **`0.1.0-alpha`**_
 
 ## Package entries
 
@@ -155,7 +157,7 @@ the schema.
 
 ### Versioning
 
-The repository specification is versioned separately in the
+The registry specification is versioned separately in the
 file `/repo/meta/version.json`.
 
 ```json
