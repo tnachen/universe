@@ -1,0 +1,22 @@
+{
+  "id": "{{edgerouter.framework-name}}",
+  "cpus": {{edgerouter.cpus}},
+  "mem": {{edgerouter.mem}},
+  "instances": {{edgerouter.instances}},
+  "constraints": [["hostname", "UNIQUE"]],
+  "acceptedResourceRoles": ["slave_public"],
+  "ports": [
+    {{edgerouter.http-port}}
+    , {{edgerouter.https-port}}
+  ],
+  "requirePorts": true,
+  "uris": {{edgerouter.uris}},
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "mesosphere/edgerouter:6a7accd1ace5bf73fed7368870ee15f26c54293c",
+      "network": "HOST"
+    }
+  },
+  "cmd": "python -m SimpleHTTPServer {{edgerouter.http-port}}"
+}

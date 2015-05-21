@@ -27,6 +27,18 @@
       }
     },
     {
+      "currentVersion":"6a7accd1ace5bf73fed7368870ee15f26c54293c",
+      "description":"Edgerouter service for DCOS",
+      "framework":false,
+      "name":"edgerouter",
+      "tags":[
+        "mesosphere"
+      ],
+      "versions":{
+        "6a7accd1ace5bf73fed7368870ee15f26c54293c":"0"
+      }
+    },
+    {
       "currentVersion":"0.1.1",
       "description":"Hadoop Distributed File System (HDFS), Highly Available",
       "framework":true,
