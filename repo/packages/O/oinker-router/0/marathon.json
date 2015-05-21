@@ -1,0 +1,22 @@
+{
+  "id": "{{oinker-router.framework-name}}",
+  "cpus": {{oinker-router.cpus}},
+  "mem": {{oinker-router.mem}},
+  "instances": {{oinker-router.instances}},
+  "constraints": [["hostname", "UNIQUE"]],
+  "acceptedResourceRoles": ["slave_public"],
+  "ports": [
+    {{oinker-router.http-port}}
+    , {{oinker-router.https-port}}
+  ],
+  "requirePorts": true,
+  "uris": {{oinker-router.uris}},
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "mesosphere/oinker-router:6a7accd1ace5bf73fed7368870ee15f26c54293c",
+      "network": "HOST"
+    }
+  },
+  "cmd": "python -m SimpleHTTPServer {{oinker-router.http-port}}"
+}

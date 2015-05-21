@@ -1,0 +1,10 @@
+{
+  "name": "oinker-router",
+  "version": "6a7accd1ace5bf73fed7368870ee15f26c54293c",
+  "scm": "https://github.com/mesosphere/oinker.git",
+  "maintainer": "support@mesosphere.io",
+  "description": "oinker-router for DCOS",
+  "framework": false,
+  "tags": ["mesosphere"],
+  "postInstallNotes": "PLACEHOLDER INSTRUCTIONS"
+}

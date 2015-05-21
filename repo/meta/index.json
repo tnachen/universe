@@ -111,6 +111,18 @@
       }
     },
     {
+      "currentVersion":"6a7accd1ace5bf73fed7368870ee15f26c54293c",
+      "description":"oinker-router for DCOS",
+      "framework":false,
+      "name":"oinker-router",
+      "tags":[
+        "mesosphere"
+      ],
+      "versions":{
+        "6a7accd1ace5bf73fed7368870ee15f26c54293c":"0"
+      }
+    },
+    {
       "currentVersion":"1.4.0-SNAPSHOT",
       "description":"Spark is a fast and general cluster computing system for Big Data",
       "framework":true,

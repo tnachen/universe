@@ -1,0 +1,69 @@
+{
+  "properties": {
+    "oinker-router": {
+      "additionalProperties": false,
+      "depscription": "oinker-router configuration properties",
+      "properties": {
+        "cpus": {
+          "default": 1.0,
+          "description": "CPU shares to allocate to each instance.",
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "framework-name": {
+          "default": "oinker-router",
+          "description": "The framework name to register with Mesos.",
+          "type": "string",
+          "pattern": "^/?(([a-z0-9]|[a-z0-9][a-z0-9\\-]*[a-z0-9])\\.)*([a-z0-9]|[a-z0-9][a-z0-9\\-]*[a-z0-9])$"
+        },
+        "http-port": {
+          "default": 80,
+          "description": "The port on which to listen for HTTP requests.",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "https-port": {
+          "default": 443,
+          "description": "The port on which to listen for HTTPS requests.",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "instances": {
+          "default": 1,
+          "description": "Number of instances to run.",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "mem": {
+          "default": 512.0,
+          "description": "Memory (MB) to allocate to each instance.",
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "uris": {
+          "default": [],
+          "description": "List of URIs that will be download and made available in the current working directory.",
+          "items": {
+            "pattern": "^[\\s]+",
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "cpus",
+        "framework-name",
+        "http-port",
+        "https-port",
+        "instances",
+        "mem",
+        "uris"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "oinker-router"
+  ],
+  "type": "object"
+}
